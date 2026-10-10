@@ -1,0 +1,32 @@
+type: GenericCrafter
+name: Silicon Alloyer
+description: A factory that melts sand and lead into Silicon using coal
+size: 3
+health: 300
+craftTime: 1
+itemCapacity: 50
+hasItems: true
+hasPower: true
+consumes: {
+  power: 0.1
+  items: [
+    sand/1
+    lead/1
+    coal/1
+  ]
+}
+outputItem: silicon/10
+requirements: [
+  silicon/100
+  copper/250
+  lead/175
+]
+category: crafting
+research: {
+  parent: silicon-smelter
+  requirements: [
+    silicon/100
+    copper/200
+    lead/200
+  ]
+}
